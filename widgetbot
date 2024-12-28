@@ -1,0 +1,8 @@
+<div style="width: 100%; height: 100vh;">
+  <widgetbot
+    server="1255315959074394182"
+    channel="1322102053845074000"
+    style="width: 100%; height: 100%;"
+  ></widgetbot>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
