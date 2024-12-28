@@ -1,8 +1,40 @@
-<div style="width: 100%; height: 100vh;">
-  <widgetbot
-    server="1255315959074394182"
-    channel="1322102053845074000"
-    style="width: 100%; height: 100%;"
-  ></widgetbot>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WidgetBot Fullscreen</title>
+  <style>
+    /* Configuración para eliminar márgenes y barras */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; /* Evita barras de desplazamiento */
+    }
+
+    /* El contenedor del widget ocupa todo el espacio */
+    #widget-container {
+      width: 100%;
+      height: 100%;
+      display: flex; /* Asegura que se estire completamente */
+    }
+
+    widgetbot {
+      width: 100%;
+      height: 100%;
+      border: none; /* Elimina bordes del widget */
+    }
+  </style>
+</head>
+<body>
+  <div id="widget-container">
+    <widgetbot
+      server="1255315959074394182"
+      channel="1322102053845074000"
+    ></widgetbot>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+</body>
+</html>
